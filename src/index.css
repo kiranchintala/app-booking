@@ -5,3 +5,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply min-h-screen;
+    background: radial-gradient(circle at top left, #fff9f4 0%, #fbe6d8 35%, #f7e7f2 70%, #f2ede7 100%);
+    font-family: 'Inter', sans-serif;
+}

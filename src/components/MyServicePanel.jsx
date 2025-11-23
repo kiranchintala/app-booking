@@ -24,16 +24,20 @@ const MyServicePanel = ({ services = [], onRemove, onProceed, totalCost }) => {
                 />
             ))}
 
-            <div className="flex justify-between items-center mt-4 text-md font-semibold text-purple-700">
+            <div className="flex justify-between items-center mt-8 text-md font-semibold text-purple-700">
                 <span>Total</span>
                 <span>${totalCost.toFixed(2)}</span>
             </div>
 
             <button
                 onClick={onProceed}
-                className="mt-4 w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded"
+                className="w-full py-2 mt-6 text-lg font-semibold rounded-xl
+    bg-gradient-to-r from-[#8b65ff] to-[#c87dff]
+    text-white shadow-lg
+    hover:brightness-110 active:scale-[0.98]
+    transition-all"
             >
-                PROCEED
+                Proceed
             </button>
         </div>
     );
